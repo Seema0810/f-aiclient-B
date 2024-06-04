@@ -15,7 +15,7 @@ app.use(morgan('dev'));
 app.use(
     cors({
       // origin: [],
-      origin: ["http://localhost:3000","https://f-ai-424219.el.r.appspot.com"],
+      origin: ["http://localhost:3000","https://f-ai-424219.el.r.appspot.com","https://f-aiclient-pf5ho7tiaq-el.a.run.app"],
 
       credentials: true
     })
