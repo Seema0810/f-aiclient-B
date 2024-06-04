@@ -1,0 +1,16 @@
+runtime: nodejs20
+env: standard
+instance_class: F2
+
+env_variables:
+  NODE_ENV: production
+  MONGO_CONNECTION_URI: "mongodb+srv://f-ai:T5NUpnJvGuRpYO3R@f-ai.hae5tiq.mongodb.net/?retryWrites=true&w=majority&appName=f-ai"
+  JWT_SECRET_KEY: "jkasdjjaeyuagjdshj@kjad7"
+  ORIGIN: "https://fai-web.vercel.app/"
+
+inbound_services:
+  - warmup
+
+handlers:
+  - url: /.*
+    script: auto
